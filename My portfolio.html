@@ -1,0 +1,119 @@
+import React from "react";
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub, FaChartLine, FaChartBar, FaDesktop, FaUsers, FaBook, FaKeyboard } from "react-icons/fa";
+
+const Portfolio = () => {
+  return (
+    <div className="min-h-screen bg-gray-900 text-gray-200 font-sans">
+      {/* Navigation Bar */}
+      <nav className="fixed top-0 left-0 right-0 bg-gray-800 shadow-md p-4 flex justify-between items-center z-50">
+        <h1 className="text-2xl font-bold text-teal-400">Joshua Daniel</h1>
+        <div className="space-x-6">
+          <a href="#about" className="text-gray-300 hover:text-teal-300 transition duration-300 scroll-smooth">About</a>
+          <a href="#skills" className="text-gray-300 hover:text-teal-300 transition duration-300 scroll-smooth">Skills</a>
+          <a href="#work" className="text-gray-300 hover:text-teal-300 transition duration-300 scroll-smooth">Experience</a>
+          <a href="#contact" className="text-gray-300 hover:text-teal-300 transition duration-300 scroll-smooth">Contact</a>
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <header className="relative h-screen flex items-center justify-center bg-teal-600 text-white text-center">
+        <div className="p-10 animate-fadeInUp">
+          <h2 className="text-4xl md:text-6xl font-bold">Hi, I'm Joshua Daniel</h2>
+          <p className="text-base md:text-lg mt-4">Business & HR Professional | Data-Driven Strategist</p>
+          <a href="#contact" className="mt-6 inline-block px-6 py-3 bg-gray-800 text-teal-400 font-semibold rounded-full shadow-lg hover:bg-teal-700 transition duration-300">Get in Touch</a>
+        </div>
+      </header>
+
+      <div className="max-w-5xl mx-auto p-8 mt-12">
+        {/* About Me */}
+        <section id="about" className="mt-12 text-center animate-fadeIn">
+          <h2 className="text-4xl font-bold text-teal-400">About Me</h2>
+          <p className="mt-4 text-lg text-gray-300">Detail-oriented team player with expertise in organizational efficiency, HR strategies, and data-driven decision-making.</p>
+        </section>
+
+        {/* Skills */}
+        <section id="skills" className="mt-12 animate-fadeInUp">
+          <h2 className="text-4xl font-bold text-teal-400 text-center">Skills</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-6 text-center text-gray-200">
+            <span className="bg-gray-800 p-4 rounded-lg shadow flex items-center justify-center space-x-2">
+              <FaChartLine className="text-teal-400" /> <span>Sales Leadership</span>
+            </span>
+            <span className="bg-gray-800 p-4 rounded-lg shadow flex items-center justify-center space-x-2">
+              <FaChartBar className="text-teal-400" /> <span>Data Visualization</span>
+            </span>
+            <span className="bg-gray-800 p-4 rounded-lg shadow flex items-center justify-center space-x-2">
+              <FaDesktop className="text-teal-400" /> <span>MS Office Suite</span>
+            </span>
+            <span className="bg-gray-800 p-4 rounded-lg shadow flex items-center justify-center space-x-2">
+              <FaUsers className="text-teal-400" /> <span>HR Metrics</span>
+            </span>
+            <span className="bg-gray-800 p-4 rounded-lg shadow flex items-center justify-center space-x-2">
+              <FaBook className="text-teal-400" /> <span>QuickBooks</span>
+            </span>
+            <span className="bg-gray-800 p-4 rounded-lg shadow flex items-center justify-center space-x-2">
+              <FaKeyboard className="text-teal-400" /> <span>Data Entry</span>
+            </span>
+          </div>
+        </section>
+
+        {/* Work Experience */}
+        <section id="work" className="mt-12 animate-fadeIn">
+          <h2 className="text-4xl font-bold text-teal-400 text-center">Work Experience</h2>
+          <div className="space-y-6 mt-6">
+            <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+              <h3 className="text-2xl font-semibold">CNC Operator - Protocase</h3>
+              <p className="text-gray-400">May 2021 - Present</p>
+              <p className="mt-2 text-gray-300">Managed CNC operations and quality assurance for high-precision manufacturing.</p>
+            </div>
+            <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+              <h3 className="text-2xl font-semibold">Technical Recruiter - Elationcs Cyber Solution</h3>
+              <p className="text-gray-400">Nov 2020 - Oct 2021</p>
+              <p className="mt-2 text-gray-300">Led hiring processes and talent acquisition for IT professionals.</p>
+            </div>
+            <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+              <h3 className="text-2xl font-semibold">Sales Coordinator - Ryoths Depot</h3>
+              <p className="text-gray-400">Aug 2017 - Nov 2020</p>
+              <p className="mt-2 text-gray-300">Developed client relationships and optimized CRM strategies.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Contact */}
+        <section id="contact" className="mt-12 text-center animate-fadeInUp">
+          <h2 className="text-4xl font-bold text-teal-400">Contact</h2>
+          <p className="mt-4 text-lg text-gray-300">Let's connect! Feel free to reach out.</p>
+          <div className="mt-6 space-y-4 text-lg">
+            <p className="flex items-center justify-center"><FaMapMarkerAlt className="text-teal-400 mr-2" /> 24-2 Ferry Street, Sydney</p>
+            <p className="flex items-center justify-center"><FaPhone className="text-teal-400 mr-2" /> +19029196113</p>
+            <p className="flex items-center justify-center"><FaEnvelope className="text-teal-400 mr-2" /> joshuadaniel944@gmail.com</p>
+          </div>
+        </section>
+      </div>
+
+      {/* Footer */}
+      <footer className="bg-gray-800 text-white text-center p-6 mt-12 animate-fadeIn">
+        <p className="text-lg">Connect with me:</p>
+        <div className="flex justify-center space-x-6 mt-4 text-2xl">
+          <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:text-gray-300" aria-label="LinkedIn">
+            <FaLinkedin />
+          </a>
+          <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:text-gray-300" aria-label="GitHub">
+            <FaGithub />
+          </a>
+        </div>
+        <p className="mt-4">© 2025 Joshua Daniel. All rights reserved.</p>
+      </footer>
+
+      {/* Back-to-Top Button */}
+      <button
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        className="fixed bottom-8 right-8 bg-teal-600 text-white p-3 rounded-full shadow-lg hover:bg-teal-700 transition duration-300"
+        aria-label="Back to top"
+      >
+        ↑
+      </button>
+    </div>
+  );
+};
+
+export default Portfolio;
