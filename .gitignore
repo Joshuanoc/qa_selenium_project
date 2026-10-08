@@ -1,5 +1,25 @@
 __pycache__/
 *.pyc
-.env
-*.log
 
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.*
+secrets.*
+
+# Logs and artifacts
+*.log
+.DS_Store
+.localized
+coverage/
+reports/
+screenshots/
+
+# Local tooling
+.idea/
+.vscode/
